@@ -4,7 +4,7 @@ development: &default
   adapter: <%= adapter %>
   encoding: <%= java.lang.System.getProperty('kaui.db.encoding', 'utf8') %>
 <% if adapter == 'sqlite3' %>
-  database: <%= java.lang.System.getProperty('kaui.db.database', '/var/tmp/kaui.sqlite3') %>
+  database: <%= java.lang.System.getProperty('kaui.db.database', '/var/lib/killbill/kaui.sqlite3') %>
   pool: 50
   timeout: 5000
 <% else %>
